@@ -1,4 +1,4 @@
-function f = ssdist(t,x,dpar)
+function f = ssdist(x,dpar)
     alpha = dpar.alpha; n = dpar.n; nf = dpar.nf; F = dpar.F;
     zf = dpar.zf; q = dpar.q; R = dpar.R; D = dpar.D;
     

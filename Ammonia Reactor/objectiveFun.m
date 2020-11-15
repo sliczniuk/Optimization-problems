@@ -10,7 +10,7 @@ function obj = objectiveFun(y)
     Length=[0 L];
     x0=[N_N2 Tf Tg P];
 
-    [z, x]=ode45(@DEdef,Length,x0(1:4));
+    [z, x]=ode45(@AmoniaReactor,Length,x0(1:4));
     plot(z,x(:,2:3)');grid on
     
     obj = 11.9877*10^6 - 1.710*10^4*x(1) - 699.3*x(2) + 704.04*x(3) - (3.4566*10^7 + 2.101 * 10^9 *z(end));

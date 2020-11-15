@@ -1,4 +1,4 @@
-function [dDV_dz]=DEdef(z, DV);
+function [dDV_dz]=AmoniaReactor(z, DV);
     %%Dependent variables
     nN=DV(1);
     Tf=DV(2);
